@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sport_navigation"
+    app:startDestination="@id/fragmentBerita">
+
+    <fragment
+        android:id="@+id/fragmentBerita"
+        android:name="com.example.uts_anmp_160420019.view.FragmentBerita"
+        android:label="fragment_fragmen_berita"
+        tools:layout="@layout/fragment_fragmen_berita" >
+        <action
+            android:id="@+id/actionBeritaToDetail"
+            app:destination="@id/fragmentDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetail"
+        android:name="com.example.uts_anmp_160420019.view.FragmentDetail"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/fragmentProfil"
+        android:name="com.example.uts_anmp_160420019.view.FragmentProfil"
+        android:label="FragmentProfil" />
+</navigation>
